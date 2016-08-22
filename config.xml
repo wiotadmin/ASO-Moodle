@@ -2,17 +2,17 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
-        versionCode = "2014"
+        id        = "com.aso.moodlemobile"
+        versionCode = "10001"
         version   = "3.1.2">
     <name>Moodle Mobile</name>
 
     <description>
-        Moodle Mobile official app
+        ASO Moodle app
     </description>
 
     <author href="http://moodle.com" email="mobile@moodle.com">
-        Moodle Pty Ltd
+        ASO
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
@@ -130,7 +130,7 @@
     <gap:plugin name="cordova-plugin-zip" source="npm" />
 
     <gap:config-file platform="android" parent="/manifest">
-         <application android:debuggable="true" />
+         <application android:debuggable="false" />
     </gap:config-file>
 
     <!-- See MOBILE-892 -->
