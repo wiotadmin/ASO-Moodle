@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.aso.moodlemobile"
-        versionCode = "10004"
+        versionCode = "10005"
         version   = "3.1.2">
     <name>ASO Moodle</name>
 
@@ -11,7 +11,7 @@
         ASO Moodle app
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
+    <author href="http://wodongatafe.edu.au" email="learninginnovation@wodongatafe.edu.au">
         ASO
     </author>
 
@@ -117,7 +117,7 @@
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-splashscreen" source="npm" />
 
-    <gap:plugin name="phonegap-plugin-push" source="npm">
+    <gap:plugin name="phonegap-plugin-push" source="npm" version="1.7.0">
         <param name="SENDER_ID" value="694767596569" />
     </gap:plugin>
     <gap:plugin name="net.tunts.webintent" />
