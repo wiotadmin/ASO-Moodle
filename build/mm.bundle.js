@@ -3063,7 +3063,6 @@ angular.module('mm.core')
             moment.locale(language);
         });
     });
-
 }]);
 angular.module('mm.core')
 .constant('mmCoreNotificationsSitesStore', 'notification_sites')
@@ -5820,7 +5819,6 @@ angular.module('mm.core')
         preSets.typeExpected = preSets.typeExpected || 'object';
         if (typeof preSets.responseExpected == 'undefined') {
             preSets.responseExpected = true;
-
         }
         data.wsfunction = method;
         data.wstoken = preSets.wstoken;
@@ -6895,7 +6893,6 @@ angular.module('mm.core')
             if (!file || !file.name) {
                 return;
             }
-
             relativePath = $mmFS.removeBasePath(file.toURL());
             if (!relativePath) {
                 relativePath = file.fullPath;
@@ -7776,9 +7773,6 @@ angular.module('mm.core.login', [])
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
         controller: 'mmLoginSiteCtrl'
-		onEnter: function($state) {
-        $state.go('mm_login.credentials', {siteurl: 'https://moodle11.wodongatafe.edu.au'});
-	}
     })
     .state('mm_login.credentials', {
         url: '/cred',
@@ -27384,7 +27378,6 @@ angular.module('mm.addons.mod_page')
             }).finally(function() {
                 $scope.$broadcast('scroll.refreshComplete');
             });
-
         }
     };
     fetchContent().then(function() {
@@ -32373,7 +32366,6 @@ angular.module('mm.addons.mod_scorm')
                 errorCode = "201";
             }
             return "false";
-
         };
         self.LMSFinish = function(param) {
             errorCode = "0";
@@ -32602,7 +32594,6 @@ angular.module('mm.addons.mod_scorm')
         $window.API.scoId = scoId;
     };
         self.setOffline = function(offline) {
-
         $window.API.offline = offline;
     };
     return self;
@@ -33632,7 +33623,6 @@ angular.module('mm.addons.mod_scorm')
         }
         return true;
     };
-
         self.logView = function(id, siteId) {
         siteId = siteId || $mmSite.getId();
         if (id) {
